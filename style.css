@@ -120,12 +120,15 @@ nav ul.show {
   color:#7D5A50
   
 }
+
+
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 25px 0;
-    padding: 0;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  /* Add this line to center the items vertically */
+  margin: 25px 0;
+  padding: 0;
   background-color: white;
 }
 .menu .item {
@@ -134,13 +137,11 @@ nav ul.show {
     text-align: center;
    position: relative;
   perspective: 1000px; 
+  padding-left: 50px;
 }
 .menu .item img {
     width: 60%;
     transform: translateZ(0);
-  
-    
-  
   transition: transform 0.25s ease-in-out;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -170,7 +171,8 @@ nav ul.show {
 
 .button {
   item-align:center;
-  text-align: center; 
+  text-align: center;
+  padding-bottom: 40px;
 }
 .btn{
   border-radius: 60px;
@@ -330,7 +332,34 @@ padding: 20px;
   font-size: 30px;
   font-weight: medium;
 }
+  .intro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .intro h2 {
+    
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 12px;
+  }
+
+
+  .about {
+  display: flex;  /* Use flex layout */
+  flex-direction: column;  /* Set the direction to column (vertical) */
+  justify-content: center;  /* Center the content horizontally */ 
 }
-
-
-
+.profile-img {
+  margin: 0 auto 20px;  /* Center the image horizontally */
+  width: 100%; 
+}
+.about-text {
+   margin: auto;  /* Center the text horizontally */
+  font-size: 15px;
+}
+}
